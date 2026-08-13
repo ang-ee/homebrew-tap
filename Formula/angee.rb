@@ -13,8 +13,12 @@ class Angee < Formula
   # bypasses angee's fallback path, which otherwise prompts to `go install` it
   # and needs a Go toolchain on the host.
   #
+  # This points at our own vendored copy, not f1bonacc1/tap: Homebrew 6 will
+  # not auto-tap a third-party dependency and additionally requires an explicit
+  # `brew trust` for it, which would turn installation into three commands.
+  #
   # git is not declared: Homebrew itself requires it, so it is always present.
-  depends_on "f1bonacc1/tap/process-compose"
+  depends_on "ang-ee/tap/process-compose"
 
   on_macos do
     on_intel do
