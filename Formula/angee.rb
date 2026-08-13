@@ -6,7 +6,15 @@
 class Angee < Formula
   desc "Self-managed stack manager for agent-native applications"
   homepage "https://angee.ai"
-  version "0.8.6"
+  # No `version`: Homebrew scans 0.8.6 from the release URLs, and
+  # `brew audit --strict` rejects declaring it twice.
+
+  # process-compose runs `runtime: local` services. Installing it here also
+  # bypasses angee's fallback path, which otherwise prompts to `go install` it
+  # and needs a Go toolchain on the host.
+  #
+  # git is not declared: Homebrew itself requires it, so it is always present.
+  depends_on "f1bonacc1/tap/process-compose"
 
   on_macos do
     on_intel do
@@ -29,13 +37,6 @@ class Angee < Formula
       sha256 "4bc35241e9ec0c7b1b41b32d1af53ddd0af065a8b9ec636f3f03e553aacb4163"
     end
   end
-
-  # process-compose runs `runtime: local` services. Installing it here also
-  # bypasses angee's fallback path, which otherwise prompts to `go install` it
-  # and needs a Go toolchain on the host.
-  depends_on "f1bonacc1/tap/process-compose"
-
-  # git is not declared: Homebrew itself requires it, so it is always present.
 
   def install
     bin.install "angee"
