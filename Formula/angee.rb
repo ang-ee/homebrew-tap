@@ -6,7 +6,7 @@
 class Angee < Formula
   desc "Self-managed stack manager for agent-native applications"
   homepage "https://angee.ai"
-  # No `version`: Homebrew scans 0.8.6 from the release URLs, and
+  # No `version`: Homebrew scans 0.9.0 from the release URLs, and
   # `brew audit --strict` rejects declaring it twice.
 
   # process-compose runs `runtime: local` services. Installing it here also
@@ -22,23 +22,23 @@ class Angee < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.8.6/angee-darwin-amd64.tar.gz"
-      sha256 "c4e8a6b8732fd21b452073f3791f6af9d75c2180a0d972f38213d5291a59d1df"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.9.0/angee-darwin-amd64.tar.gz"
+      sha256 "3cd5a301ca1f7799279be4785ea0ffd5a89cf61c00f66340070f5c2cc84eef78"
     end
     on_arm do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.8.6/angee-darwin-arm64.tar.gz"
-      sha256 "dca08b80d37573b7c3e15813e194cf28321b81d85c9b9adb9254557a17417bc5"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.9.0/angee-darwin-arm64.tar.gz"
+      sha256 "22d7c433d1c99014aaf42956688525745660452c208fe1de3e4777e300a0ff95"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.8.6/angee-linux-amd64.tar.gz"
-      sha256 "e5f7e774b364d7020c4fad01091db2a1ce156876ee7e7fc6e59ae7cf82309cb9"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.9.0/angee-linux-amd64.tar.gz"
+      sha256 "34e567e0505e4fc277cbbe30b47583b5e2033c952f1e5177f2da516c34fa8563"
     end
     on_arm do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.8.6/angee-linux-arm64.tar.gz"
-      sha256 "4bc35241e9ec0c7b1b41b32d1af53ddd0af065a8b9ec636f3f03e553aacb4163"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.9.0/angee-linux-arm64.tar.gz"
+      sha256 "f0d76fbf5f9609344c6335351ae4869d15db1d7435c9221d706ed96a1a5fb46b"
     end
   end
 
