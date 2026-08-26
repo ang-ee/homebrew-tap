@@ -6,7 +6,7 @@
 class Angee < Formula
   desc "Self-managed stack manager for agent-native applications"
   homepage "https://angee.ai"
-  # No `version`: Homebrew scans 0.10.0 from the release URLs, and
+  # No `version`: Homebrew scans 0.10.1 from the release URLs, and
   # `brew audit --strict` rejects declaring it twice.
 
   # process-compose runs `runtime: local` services. Installing it here also
@@ -22,23 +22,23 @@ class Angee < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.10.0/angee-darwin-amd64.tar.gz"
-      sha256 "2932b28cbf3a4f582ac31df5bd472680b3b8db4a01cac8cf14a4260b695b6e31"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.10.1/angee-darwin-amd64.tar.gz"
+      sha256 "f0be06e7c2084e6ce7f8de2b92e3aa72486da7196918ae4f69b806c367085a27"
     end
     on_arm do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.10.0/angee-darwin-arm64.tar.gz"
-      sha256 "573b6e6b3d2c5389744d748472dd66e81327765d8ce02294b6558d67d26094ef"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.10.1/angee-darwin-arm64.tar.gz"
+      sha256 "3a875dbc8621a217eafd1ac4b8c04c84f3ae30da0e1f44888e19d2a92c205bda"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.10.0/angee-linux-amd64.tar.gz"
-      sha256 "ec9261513c185b307b8728d1dd95248aef09e8e317530cf6b8ec5b81adf2b977"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.10.1/angee-linux-amd64.tar.gz"
+      sha256 "4ffa2d9644bb22c167cca12fab34527826957321b9689275d4da2004f9d42407"
     end
     on_arm do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.10.0/angee-linux-arm64.tar.gz"
-      sha256 "c53ee8e4f3c4eeba6e926471bfa5b749628d48f4d15db3ab323c085e66c0b4e5"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.10.1/angee-linux-arm64.tar.gz"
+      sha256 "ebd6b026c228c43dc8a3b4cc77aa21a0ab447b0e3122c299e7cb84475c4c6e27"
     end
   end
 
