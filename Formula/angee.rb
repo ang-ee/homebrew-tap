@@ -6,7 +6,7 @@
 class Angee < Formula
   desc "Self-managed stack manager for agent-native applications"
   homepage "https://angee.ai"
-  # No `version`: Homebrew scans 0.12.0 from the release URLs, and
+  # No `version`: Homebrew scans 0.12.1 from the release URLs, and
   # `brew audit --strict` rejects declaring it twice.
 
   # process-compose runs `runtime: local` services. Installing it here also
@@ -22,23 +22,23 @@ class Angee < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.12.0/angee-darwin-amd64.tar.gz"
-      sha256 "9d1bf92147c951d7bbf19ad25d6bbef209f0dd58026e698f98da6d0c01fb3f6f"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.12.1/angee-darwin-amd64.tar.gz"
+      sha256 "ae77d252b58c964287003fd97982b86dc68d3e9c76f6a60cc56aa23fa3c5cd6e"
     end
     on_arm do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.12.0/angee-darwin-arm64.tar.gz"
-      sha256 "3c11f19cc2f28ca723ad4efd29b2f1ed57180892db683059ce19ac743bc9b644"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.12.1/angee-darwin-arm64.tar.gz"
+      sha256 "13d56adfda08360fbaeb60a29f21ed86fa104d74fe30976ef058e20a7ceb358d"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.12.0/angee-linux-amd64.tar.gz"
-      sha256 "b681e82260769d48778910d6dc8ad76e789669aab95843e5113a542a64bb0701"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.12.1/angee-linux-amd64.tar.gz"
+      sha256 "f1c80b8678e5517dd1c4b84739036c7489c911c039a41d606dddfb980462337e"
     end
     on_arm do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.12.0/angee-linux-arm64.tar.gz"
-      sha256 "8f96eeb236753a978853be46749350255161cc83974b1161afe969210bbb8f1d"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.12.1/angee-linux-arm64.tar.gz"
+      sha256 "86b89eadf03590630037be8bb77905e7ba49bc99f02137bdd000ed6e2271f8af"
     end
   end
 
