@@ -6,7 +6,7 @@
 class Angee < Formula
   desc "Self-managed stack manager for agent-native applications"
   homepage "https://angee.ai"
-  # No `version`: Homebrew scans 0.13.0 from the release URLs, and
+  # No `version`: Homebrew scans 0.14.0 from the release URLs, and
   # `brew audit --strict` rejects declaring it twice.
 
   # process-compose runs `runtime: local` services. Installing it here also
@@ -22,23 +22,23 @@ class Angee < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.13.0/angee-darwin-amd64.tar.gz"
-      sha256 "67beac34b4e1f894135395b1584f2255b91bada2fb1a2be7832d97c3efd6fcb7"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.14.0/angee-darwin-amd64.tar.gz"
+      sha256 "4dac61f90a58a3bf3665b08a3edc4ac6db3f98029c1628e5bcdd8ab42f9c5804"
     end
     on_arm do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.13.0/angee-darwin-arm64.tar.gz"
-      sha256 "03645ad696096e7f3517fcbf987b27f7cf7a469e4e64d7177fc4d45d5d142383"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.14.0/angee-darwin-arm64.tar.gz"
+      sha256 "dfcfbd31f99facc94728587c09f40eab31375007a5c26bc9b05a1d1dc3a5c211"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.13.0/angee-linux-amd64.tar.gz"
-      sha256 "4d0bcd16a44e4bdff64fd6ea44f8491ac63a13ce52bf9d1e03a666849971b282"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.14.0/angee-linux-amd64.tar.gz"
+      sha256 "bcbac14823a0c41fd793e6f505b696c7e12660d8f9783c4fbd8fc79c0fe76a02"
     end
     on_arm do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.13.0/angee-linux-arm64.tar.gz"
-      sha256 "a1c8f1db6e87c424b64e681e5f4688a10ee02f3b6f967cd85f8e6245f1144697"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.14.0/angee-linux-arm64.tar.gz"
+      sha256 "c4fe7c6ee03a0a0c7b22651bf69c4cc139e349e71df060df650bb32adeba5936"
     end
   end
 
