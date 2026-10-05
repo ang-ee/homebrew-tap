@@ -6,7 +6,7 @@
 class Angee < Formula
   desc "Self-managed stack manager for agent-native applications"
   homepage "https://angee.ai"
-  # No `version`: Homebrew scans 0.15.0 from the release URLs, and
+  # No `version`: Homebrew scans 0.16.0 from the release URLs, and
   # `brew audit --strict` rejects declaring it twice.
 
   # process-compose runs `runtime: local` services. Installing it here also
@@ -22,23 +22,23 @@ class Angee < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.15.0/angee-darwin-amd64.tar.gz"
-      sha256 "d0c0996d0a220b2e8b9181d623c5514460d02f42218bf97311364d02100dd58d"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.16.0/angee-darwin-amd64.tar.gz"
+      sha256 "6a0ccc4c6d7acaeeb9e17d665f0417a792f6579f69f2f3a0b5dca35344bf1aa6"
     end
     on_arm do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.15.0/angee-darwin-arm64.tar.gz"
-      sha256 "cc1558d213038ba45a1cf4d5496f0cb9e57dea3413f833662fb8a09e5f38328b"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.16.0/angee-darwin-arm64.tar.gz"
+      sha256 "f205a8a2a8ba2f4ad71f48d6b68bf889f17ab274cddb528c570d6e10c2d22741"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.15.0/angee-linux-amd64.tar.gz"
-      sha256 "def85699486348ed45e5408319bb9f0741f0895fd8147e6d82a62d6e3ced3c07"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.16.0/angee-linux-amd64.tar.gz"
+      sha256 "d11171b73f873b7d118fdb66fb82b86bb350b78c6e663c87fccd7bd764c8578e"
     end
     on_arm do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.15.0/angee-linux-arm64.tar.gz"
-      sha256 "e08ecde5ac434c012437670f57fff1189cdf0a0f7c6a7d8253d5b55519359bbd"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.16.0/angee-linux-arm64.tar.gz"
+      sha256 "1a3aae83b9693a011fc1fbb2e50e3993bea1928fe19e974456aff3e99115bebf"
     end
   end
 
