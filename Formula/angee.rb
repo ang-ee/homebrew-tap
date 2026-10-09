@@ -6,7 +6,7 @@
 class Angee < Formula
   desc "Self-managed stack manager for agent-native applications"
   homepage "https://angee.ai"
-  # No `version`: Homebrew scans 0.19.0 from the release URLs, and
+  # No `version`: Homebrew scans 0.20.0 from the release URLs, and
   # `brew audit --strict` rejects declaring it twice.
 
   # process-compose runs `runtime: local` services. Installing it here also
@@ -22,23 +22,23 @@ class Angee < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.19.0/angee-darwin-amd64.tar.gz"
-      sha256 "5f64a17d87db76ecd6cabf39c29825cbc74f777520fcc982c0beb7f3d58fad88"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.20.0/angee-darwin-amd64.tar.gz"
+      sha256 "2290b80533381fe85d4ec63f759009bfe9e4a6db980dc12a58db18b2c06e0020"
     end
     on_arm do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.19.0/angee-darwin-arm64.tar.gz"
-      sha256 "0024f4055caa4709212f6238ea0f58b9f277c4f31df47a9d69e25670d386922d"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.20.0/angee-darwin-arm64.tar.gz"
+      sha256 "b4dbbcb51c97941f1eaa3c6ef6f83e67d01f2a2fb638920bb89027ed232b8a30"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.19.0/angee-linux-amd64.tar.gz"
-      sha256 "94b7576c535a7e72d21a24c9da202a1b5fe0c238d12370966844054add8a4ac1"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.20.0/angee-linux-amd64.tar.gz"
+      sha256 "818695de5e0393b2384c0811738683b79447853216d8f88dd6dbdf4bfadf4ed4"
     end
     on_arm do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.19.0/angee-linux-arm64.tar.gz"
-      sha256 "d07486cc8edc97d0f6c30b77b4ebe852233d948e46d03bc7c117c8738f24ecde"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.20.0/angee-linux-arm64.tar.gz"
+      sha256 "15950b10e3d8be5fb88ab9b26e515904af4976bbe0347d1d27dec75f55b4426f"
     end
   end
 
