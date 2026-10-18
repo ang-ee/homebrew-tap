@@ -59,7 +59,7 @@ class Angee < Formula
       `runtime: local` services use process-compose, installed as a dependency.
       A stack using neither needs no container runtime at all.
 
-      Getting started:  https://docs.angee.ai/guide/getting-started
+      Getting started:  https://docs.angee.ai/cli/getting-started
     CAVEATS
   end
 
