@@ -6,7 +6,7 @@
 class Angee < Formula
   desc "Self-managed stack manager for agent-native applications"
   homepage "https://angee.ai"
-  # No `version`: Homebrew scans 0.24.0 from the release URLs, and
+  # No `version`: Homebrew scans 0.25.0 from the release URLs, and
   # `brew audit --strict` rejects declaring it twice.
 
   # process-compose runs `runtime: local` services. Installing it here also
@@ -22,23 +22,23 @@ class Angee < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.24.0/angee-darwin-amd64.tar.gz"
-      sha256 "23df81c8fce1ef96838374618a0ebedc317d4a86422c9fff9ca80af239ec13c4"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.25.0/angee-darwin-amd64.tar.gz"
+      sha256 "81cebff9b15e70a7ef932692ec36869f541809e4757ee79ac82a85bcc1b34427"
     end
     on_arm do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.24.0/angee-darwin-arm64.tar.gz"
-      sha256 "581da90d230e5730cc200d60a234a861ecc89a2ad22fe8d61ac00b3afe4588d9"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.25.0/angee-darwin-arm64.tar.gz"
+      sha256 "1bb32b92494ed865fc1f90de085d71df87cb3bf134003662830dd6e84aace68c"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.24.0/angee-linux-amd64.tar.gz"
-      sha256 "51a8eae89244fe726d50e644070e2907e86ef90292e85afe1faa4adc6d43bf7d"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.25.0/angee-linux-amd64.tar.gz"
+      sha256 "2ded918c1fd077be74f7ae95422fba53b635c332c5f62909da0ee6371a3bc0ca"
     end
     on_arm do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.24.0/angee-linux-arm64.tar.gz"
-      sha256 "be87f9b0880e2a52f747725e248f361c8dc72292c1d2e564bfe065c64550304c"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.25.0/angee-linux-arm64.tar.gz"
+      sha256 "4c7dcd5c5bce51fe8185a488f632bf47118e8c30ad581611e26b4de8a6ad18c3"
     end
   end
 
