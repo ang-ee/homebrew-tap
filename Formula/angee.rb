@@ -6,7 +6,7 @@
 class Angee < Formula
   desc "Self-managed stack manager for agent-native applications"
   homepage "https://angee.ai"
-  # No `version`: Homebrew scans 0.26.0 from the release URLs, and
+  # No `version`: Homebrew scans 0.27.0 from the release URLs, and
   # `brew audit --strict` rejects declaring it twice.
 
   # process-compose runs `runtime: local` services. Installing it here also
@@ -22,23 +22,23 @@ class Angee < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.26.0/angee-darwin-amd64.tar.gz"
-      sha256 "198c294781db793bd2b0d51d7e610a7717f6ab721553b2e863d76367f011a25c"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.27.0/angee-darwin-amd64.tar.gz"
+      sha256 "6931425d5dbd40c0ed62e060fdb47f4d4a309e85e63768ed75a69f3fbc3486f7"
     end
     on_arm do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.26.0/angee-darwin-arm64.tar.gz"
-      sha256 "4a14b9142e704593de7b5a3aa6eafa8a7c026e799ace25c3a96679320a1d0564"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.27.0/angee-darwin-arm64.tar.gz"
+      sha256 "4e1f4fd25e537d0178755482573e98b49541e088992e6dd0b1fb00141e62fef7"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.26.0/angee-linux-amd64.tar.gz"
-      sha256 "e39a18603569f537d2eea3a63afd3636ad473f9ad664e160d99d9120b529a787"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.27.0/angee-linux-amd64.tar.gz"
+      sha256 "07359e2ad11cf168466731e6e5a51e5cd0af125918c8eb953915b44ccf6cdd7f"
     end
     on_arm do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.26.0/angee-linux-arm64.tar.gz"
-      sha256 "ff7b99f33ae4d25d7b695984b25e5298e21e1af1de0dcf66c8f22c406880b20a"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.27.0/angee-linux-arm64.tar.gz"
+      sha256 "967e397e971e3f6baf090fe10f59253d783868629692127e10f313f777681376"
     end
   end
 
