@@ -6,7 +6,7 @@
 class Angee < Formula
   desc "Self-managed stack manager for agent-native applications"
   homepage "https://angee.ai"
-  # No `version`: Homebrew scans 0.27.1 from the release URLs, and
+  # No `version`: Homebrew scans 0.27.2 from the release URLs, and
   # `brew audit --strict` rejects declaring it twice.
 
   # process-compose runs `runtime: local` services. Installing it here also
@@ -22,23 +22,23 @@ class Angee < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.27.1/angee-darwin-amd64.tar.gz"
-      sha256 "416073dbd8f1af35d6e94314e22f5c586b8bdad6490c7675649266af7d895204"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.27.2/angee-darwin-amd64.tar.gz"
+      sha256 "23fb3537ef375d0337085ab7683e6bf5492001fb24ae205f28b4fab7edb0c4fa"
     end
     on_arm do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.27.1/angee-darwin-arm64.tar.gz"
-      sha256 "cb8d164bc32ed0b73c6b5479a10dabe71e61c7e9de75715814af0b747c770502"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.27.2/angee-darwin-arm64.tar.gz"
+      sha256 "e4ee6fa219ff61fc938eaec869b08660ec941b5ae129c08f6fb9992919d79bc2"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.27.1/angee-linux-amd64.tar.gz"
-      sha256 "4ffe330ca1e51a912beb5c8076549ec3f2bb4c5f87b1e82b1be30abae4ac6b6b"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.27.2/angee-linux-amd64.tar.gz"
+      sha256 "5661cfd7ec12f5be470ebda0676d048cf5a219bae811ff869d33bb16218b3737"
     end
     on_arm do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.27.1/angee-linux-arm64.tar.gz"
-      sha256 "72e0306abd6de72024b5c76cb5378d642ea28991ed786043278a50de8b153fdc"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.27.2/angee-linux-arm64.tar.gz"
+      sha256 "1af6472cbfe59233379d57319c8b5911720e0d5d2f1bad71a92e79a43cf0a8f8"
     end
   end
 
