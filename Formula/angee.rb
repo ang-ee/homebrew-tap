@@ -6,7 +6,7 @@
 class Angee < Formula
   desc "Self-managed stack manager for agent-native applications"
   homepage "https://angee.ai"
-  # No `version`: Homebrew scans 0.27.3 from the release URLs, and
+  # No `version`: Homebrew scans 0.28.0 from the release URLs, and
   # `brew audit --strict` rejects declaring it twice.
 
   # process-compose runs `runtime: local` services. Installing it here also
@@ -22,23 +22,23 @@ class Angee < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.27.3/angee-darwin-amd64.tar.gz"
-      sha256 "21a805135c167a4c941bea39eefc28697eefe2450deec29b11f7ea8e13992369"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.28.0/angee-darwin-amd64.tar.gz"
+      sha256 "c1cbd31b77502e025ef9515f575b3a2994b332350859ab9a421d737dd9414f5a"
     end
     on_arm do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.27.3/angee-darwin-arm64.tar.gz"
-      sha256 "92964070caadd908fb606cebdccc8f1f1a66218730ae66bcd938f108f491d078"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.28.0/angee-darwin-arm64.tar.gz"
+      sha256 "e7d7734a901b10c1303aed477815dd694738d9eb788155f16f401ced4a2eae3f"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.27.3/angee-linux-amd64.tar.gz"
-      sha256 "017e9e460ec635409d11fd5472ce1f1fae5081c7bf2fb676a2c8e311226601c9"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.28.0/angee-linux-amd64.tar.gz"
+      sha256 "be451d039d645d7d236108b744bf3a78ceed0f2f2931a8cbd1a817ae693f1868"
     end
     on_arm do
-      url "https://github.com/ang-ee/angee-operator/releases/download/v0.27.3/angee-linux-arm64.tar.gz"
-      sha256 "4f326f7e2baca7010ada8a1196a634535577dcf329ff8421bf0862870d96d9fc"
+      url "https://github.com/ang-ee/angee-operator/releases/download/v0.28.0/angee-linux-arm64.tar.gz"
+      sha256 "c5965d8288dd8bebb27f50f40ca492182be46cc352caf1e39f92fb6837d0c69d"
     end
   end
 
